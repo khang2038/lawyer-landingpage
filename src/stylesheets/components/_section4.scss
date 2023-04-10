@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+.section4 {
+  background-color: $section-background;
+  .section4-content {
+    padding: 61px 0 89px 0;
+    &__title {
+      font-family: $header-font;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      text-align: center;
+      letter-spacing: 0.5px;
+      font-feature-settings: "salt" on, "liga" off;
+      color: #2d2f30;
+    }
+    .list-testimonial{
+      display: flex;
+      margin-top: 51px;
+      gap:30px;
+    }
+  }
+}

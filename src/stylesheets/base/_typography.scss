@@ -1,0 +1,26 @@
+@use "../abstracts" as *;
+
+@font-face {
+  font-family: Poppins;
+  src: url(/src/assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Plus_Jakarta_Sans;
+  src: url(/src/assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: Playfair_Display;
+  src: url(/src/assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: Inter;
+  src: url(/src/assets/fonts/Inter/Inter-Regular.ttf);
+}
+
+body {
+  font-weight: 400;
+  color: $text-color;
+  font-family: $primary-font;
+}

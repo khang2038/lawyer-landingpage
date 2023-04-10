@@ -1,0 +1,24 @@
+<nav class="navbar">
+  <div class="navbar-logo">
+    <div class="navbar-logo__circle">L</div>
+    <div class="navbar-logo__text">Lawliet</div>
+  </div>
+  <div class="navbar-right">
+    <div class="navbar-right-categories">
+      <include
+        src="./components/nav-list.html"
+        locals='{
+            "classList":"navbar-right-categories-list",
+            "classLink":"navbar-right-categories__item",
+            "list":"[`CONTACT`,`TESTIMONIALS`,`ABOUT`,`TERMS`]"
+          }'
+      >
+      </include>
+    </div>
+    <div class="navbar-right__action">
+      <figure class="navbar-right__action--search">
+        <img src="../assets/icons/SearchOutline.svg" alt="search" />
+      </figure>
+    </div>
+  </div>
+</nav>

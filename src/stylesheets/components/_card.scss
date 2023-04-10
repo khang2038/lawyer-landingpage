@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 18px;
+  width: 256px;
+  height: 253px;
+  background: $background-color;
+  box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  .card__title {
+    font-family: $header-font;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: $text-color;
+  }
+  .card__description {
+    font-family: $description-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: $border-color;
+  }
+}

@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+.section2 {
+  background: $section-background;
+  .container{
+    padding: 126px 0 126px 0;
+  }
+  .section2-content {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 120px;
+    align-items: center;
+    .information {
+      &__title {
+        font-family: $header-font;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 0.323077px;
+        color: $text-color;
+      }
+      &__description {
+        margin-top: 11px;
+        font-family: $primary-font;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+        letter-spacing: 0.5px;
+        color: $border-color;
+      }
+    }
+    .list-card{
+      display: grid;
+      grid-template-columns: 280px 280px;
+      grid-template-rows: 280px 280px;
+      padding-bottom: 30px;
+    }
+  }
+}

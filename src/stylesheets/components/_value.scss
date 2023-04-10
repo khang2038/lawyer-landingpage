@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+.value {
+  width: 225px;
+  display: flex;
+  flex-direction: column;
+  font-family: $primary-font;
+  text-align: center;
+  color: $background-color;
+  font-feature-settings: "salt" on, "liga" off;
+  &__quantity {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.003em;
+  }
+}

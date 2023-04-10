@@ -1,0 +1,50 @@
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="content">
+        <div class="content-logo">
+          <div class="content-logo__circle">L</div>
+          <div class="content-logo__text">Lawliet</div>
+        </div>
+        <div class="list-block-link">
+          <include src="./components/block-link.html" locals='{
+            "title":"Product",
+            "listLink":"[`Overview`,`Features`,`Tutorials`,`Pricing`,`Releases`]"
+          }'>
+          </include>
+          <include src="./components/block-link.html" locals='{
+            "title":"Company",
+            "listLink":"[`About`,`Press`,`Careers`,`Contact`,`Partners`]"
+          }'>
+          </include>
+          <include src="./components/block-link.html" locals='{
+            "title":"Support",
+            "listLink":"[`Help Center`,`Terms of service`,`Legal`,`Privacy Policy`,`Status`]"
+          }'>
+          </include>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="content">
+        <p class="content__copyright">© 2021 Lawliet. All rights reserved</p>
+        <div class="list-social">
+          <include src="./components/social.html" locals='{
+            "url":"../assets/icons/Social-instagram.svg"
+          }'></include>
+          <include src="./components/social.html" locals='{
+            "url":"../assets/icons/Social_Icons.png"
+          }'></include>
+          <include src="./components/social.html" locals='{
+            "url":"../assets/icons/twiter-icons.svg"
+          }'></include>
+          <include src="./components/social.html" locals='{
+            "url":"../assets/icons/youtube-icons.svg"
+          }'></include>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

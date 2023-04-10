@@ -1,0 +1,112 @@
+@use "../abstracts" as *;
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.section1 {
+  width: 100%;
+  .content {
+    position: relative;
+    .content-info {
+      margin-top: 96px;
+      .content-info__subtitle {
+        background-color: #e7f6ff;
+        border-radius: 26.5px;
+        display: flex;
+        width: 500px;
+        height: 40px;
+        text-align: center;
+        align-items: center;
+        color: #193e6c;
+        padding: 2px 21px 2px 6px;
+        gap: 9px;
+        &--left {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 86px;
+          height: 28px;
+          background: #094b72;
+          border-radius: 26.5px;
+          color: $background-color;
+        }
+      }
+      .content-info__title {
+        font-family: $header-font;
+        margin-top: 18px;
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: $primary-color;
+      }
+      .content-info__description {
+        font-family: $description-font;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 158%;
+        letter-spacing: 0.5px;
+        color: $text-sub-color;
+        margin-top: 46px;
+      }
+      .content-info__btn {
+        margin-top: 42px;
+        width: 190px;
+        height: 80px;
+        background: $primary-color;
+        border-radius: 8px;
+        color: $background-color;
+        border: none;
+      }
+      .company {
+        margin-top: 115px;
+        &__introduce {
+          font-family: $description-font;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 140.5%;
+          letter-spacing: 0.04em;
+          color: $border-color;
+        }
+        &-logo {
+          margin-top: 40px;
+          display: grid;
+          grid-template-columns: 150px 150px;
+          grid-template-rows: 50px 50px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+    .content-person {
+      position: absolute;
+      bottom: 0;
+      left: 510px;
+      .person-info {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 382px;
+        height: 114px;
+        left: 22%;
+        bottom: -30px;
+        background: $background-color;
+        border-radius: 10px;
+        font-family: $description-font;
+        line-height: 36px;
+        box-shadow:  0px 39px 100px rgba(25, 62, 108, 0.12);
+        &__name {
+          font-weight: 700;
+          font-size: 24px;
+          color: #33475b;
+        }
+        &__career {
+          font-weight: 500;
+          font-size: 16px;
+          color: #87898c;
+        }
+      }
+    }
+  }
+}
