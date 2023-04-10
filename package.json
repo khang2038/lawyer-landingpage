@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "parcel src/pages/index.html",
     "build": "parcel build src/pages/index.html",
-    "predeploy": "yarn run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"
   },
   "author": "",
