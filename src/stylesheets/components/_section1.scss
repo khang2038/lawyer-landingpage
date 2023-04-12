@@ -23,8 +23,6 @@
     position: relative;
     .content-info {
       margin-top: 96px;
-      position: relative;
-      z-index: 999;
       @include desktop-small {
         display: flex;
         flex-direction: column;
@@ -116,6 +114,17 @@
         border-radius: 8px;
         color: $background-color;
         border: none;
+        transition: all 0.7s ease-out;
+        &:hover {
+          cursor: pointer;
+          transition: all 0.5s ease-out;
+          transform: translateY(-3px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        &:active {
+          transform: translateY(-1px);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
       }
       .company {
         margin-top: 115px;
