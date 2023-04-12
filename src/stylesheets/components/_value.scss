@@ -7,15 +7,38 @@
   text-align: center;
   color: $background-color;
   font-feature-settings: "salt" on, "liga" off;
+  @include desktop-small {
+    width: 150px;
+  }
+  @include tablet {
+    width: 130px;
+  }
   &__quantity {
     font-weight: 800;
     font-size: 48px;
     line-height: 64px;
+    @include desktop-small {
+      font-size: 40px;
+      line-height: 55px;
+    }
+    @include tablet {
+      font-size: 35px;
+      line-height: 50px;
+    }
   }
   &__description {
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
     letter-spacing: 0.003em;
+    @include desktop-small {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 23px;
+    }
   }
 }

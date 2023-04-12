@@ -1,11 +1,15 @@
 @use "../abstracts/" as *;
 .navbar {
+  display: flex;
   .navbar-right-categories-list {
     display: block;
   }
-  width: 100%;
   height: 100px;
   @include flex($align: center, $justify: space-between);
+  @include tablet-lager {
+    justify-content: space-around;
+    padding: 0 40px 0 40px;
+  }
 
   .navbar-logo {
     color: $text-color;
@@ -18,7 +22,7 @@
     gap: 15px;
     align-items: center;
     letter-spacing: 1.5px;
-    &__circle{
+    &__circle {
       width: 36px;
       height: 36px;
       background-color: $primary-color;
@@ -33,6 +37,9 @@
   .navbar-right {
     @include flex($align: center, $justify: space-between);
     gap: 100px;
+    @include tablet-lager {
+      display: none;
+    }
     &-categories {
       @include flex($align: center, $justify: space-around);
       gap: 56px;
@@ -51,6 +58,14 @@
         height: 18px;
         margin-bottom: 10px;
       }
+    }
+  }
+  .bars__btn {
+    width: 20px;
+    height: 20px;
+    display: none;
+    @include tablet-lager {
+      display: block;
     }
   }
 }

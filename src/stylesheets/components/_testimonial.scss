@@ -18,11 +18,27 @@
     justify-content: center;
     position: relative;
     box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+    @include desktop-small {
+      width: 480px;
+      height: 170px;
+    }
+    @include mobile {
+      width: 280px;
+      height: 300px;
+    }
     &__title {
       font-weight: 500;
       font-size: 18px;
       line-height: 28px;
       color: $text-color;
+      @include desktop-small {
+        font-size: 16px;
+        line-height: 25px;
+      }
+      @include mobile {
+        font-size: 14px;
+        line-height: 23px;
+      }
     }
     &__description {
       margin-top: 8px;
@@ -31,8 +47,16 @@
       line-height: 24px;
       letter-spacing: 0.5px;
       color: $text-sub-color;
+      @include desktop-small {
+        font-size: 12px;
+        line-height: 23px;
+      }
+      @include mobile {
+        font-size: 11px;
+        line-height: 22px;
+      }
     }
-    &__arrow{
+    &__arrow {
       width: 24px;
       height: 14.8px;
       border-left: 20px solid transparent;
@@ -48,6 +72,7 @@
     margin-top: 33px;
     display: flex;
     gap: 16px;
+    justify-content: center;
     .info {
       display: flex;
       flex-direction: column;
@@ -58,6 +83,10 @@
         font-size: 18px;
         line-height: 28px;
         color: #151617;
+        @include desktop-small {
+          font-size: 16px;
+          line-height: 25px;
+        }
       }
       &__career {
         font-family: $primary-font;
@@ -66,6 +95,10 @@
         line-height: 24px;
         letter-spacing: 0.5px;
         color: $text-sub-color;
+        @include desktop-small {
+          font-size: 12px;
+          line-height: 23px;
+        }
       }
     }
   }

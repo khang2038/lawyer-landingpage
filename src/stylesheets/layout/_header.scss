@@ -1,9 +1,4 @@
 @use "../abstracts" as *;
 
 .header-container {
-  @include tablet {
-    .navbar {
-      display: none;
-    }
-  }
 }
