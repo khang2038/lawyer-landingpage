@@ -2,6 +2,7 @@
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 1rem;
  
   @include desktop-small {
     max-width: 990px;
