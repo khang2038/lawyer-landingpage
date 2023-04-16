@@ -7,18 +7,13 @@
   }
   .section2-content {
     display: flex;
-    justify-content: space-between;
     @include tablet-lager {
       flex-direction: column;
       gap: 40px;
-      margin-left: 80px;
+      justify-content: center;
     }
-    padding-right: 120px;
     align-items: center;
-    @include desktop-small {
-      padding-left: 20px;
-      padding-right: 80px;
-    }
+    gap:80px;
     .information {
       &__title {
         font-family: $header-font;

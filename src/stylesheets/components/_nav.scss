@@ -112,6 +112,9 @@
       align-items: center;
       justify-content: center;
     }
+    &:hover{
+      cursor: pointer;
+    }
   }
 
   .navbar-right {
@@ -137,6 +140,9 @@
         width: 18px;
         height: 18px;
         margin-bottom: 10px;
+        &:hover{
+          cursor: pointer;
+        }
       }
     }
   }
