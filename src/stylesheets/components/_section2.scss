@@ -15,6 +15,7 @@
     align-items: center;
     gap:80px;
     .information {
+      display: block;
       &__title {
         font-family: $header-font;
         font-weight: 700;
